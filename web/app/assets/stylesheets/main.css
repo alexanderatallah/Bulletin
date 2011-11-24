@@ -1,0 +1,177 @@
+/* @override 
+	http://localhost:3000/assets/main.css?body=1 */
+
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.clear {
+  height: 0px;
+	clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+body {
+	background-image: url(/assets/StanfordBackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Gill Sans", Helvetica, sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+	#header {
+		background-color: transparent;
+		padding: 5px;
+		height: 73px;
+	}
+	
+		#logo-img {
+			float: left;
+			margin-top: -8px;
+		}
+		
+		#search-wrapper {
+			float: left;
+			margin-top: 33px;
+			margin-left: 65px;
+		}
+		
+			#search-input {
+				width: 180px;
+				margin-left: 52px;
+				font-size: 13px;
+				-webkit-appearance: none;
+				padding: 5px 5px 5px 5px;
+				border-radius: 20px;
+				background-color: #C2E9FD;
+				background-repeat: no-repeat;
+				background-position: 8px 6px;
+				color: #3d3d3d;
+				outline: none;
+				-moz-box-shadow:inset 0 2px 2px rgba(0, 0, 0, 0.75);;
+				box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.75);
+			}
+			
+			.a-result {
+			  display: block;
+			  text-decoration: none;
+			  font-weight: bold;
+			  padding: 10px;
+			}
+			
+			#results {
+			  width: 500px;
+			  background-color: white;
+			  position: absolute;
+			}
+			
+		#nav {
+			float: right;
+			margin-top: 18px;
+		}
+			#nav .top {
+        			text-align: right;
+	            margin-right: 85px;
+	            height: 33px;
+	            padding-top: 5px;
+	            display: none;
+			}
+			
+	#content {
+		border-radius: 4px;
+		background-color: rgba(255,255,255,0.8);
+		padding: 15px;
+		box-shadow: #333 0px 4px 15px;
+	}
+	
+	  .heading {
+	    margin-bottom: 10px;
+	  }
+	
+		#content-top {
+			height: 40px;
+		}
+		
+		#content-left, #content-center, #content-right {
+			float: left;
+		}
+		
+		#content-left {
+			width: 235px;
+			padding-right: 15px;
+		}
+		
+		#content-center {
+			width: 400px;
+			padding: 0 15px;
+		}
+		
+		#content-right {
+			width: 235px;
+			padding-left: 15px;
+		}
+		
+		  img.ical {
+		    float: right;
+		  }
+		  
+		.main {
+		  width: 70%;
+		}
+	  .sidebar {
+	    width: 28%;
+	    padding: 5px;
+	  }
+		  
+		.event {
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      background: -moz-linear-gradient(270deg, #ffffff 0%, #ececec 100%) #ffffff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec)) #ffffff;
+      border: 1px solid #707070;
+      text-shadow: 0 1px 0 #ffffff;
+    }
+    
+    .event:first-of-type {
+      margin-top: 5px;
+    }
+      
+      .event p {
+        clear: both;
+      }
+      
+      .date {
+        background-color: #c8e1e7;
+        padding: 2px 5px;
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.43);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.43);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.43);
+      }
+      
+      .event h4 {
+        font-size: 16px;
+        color: #4c4c4c;
+      }
+      
+      .footer {
+        border-top: 1px dotted #727272;
+        padding-top: 5px;
+        margin-top: 5px;
+      }

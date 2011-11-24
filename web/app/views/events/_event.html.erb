@@ -1,0 +1,21 @@
+<div class="event" id="event-<%= event.id %>">
+  <% 
+     start_day = event.start ? event.start.strftime("%b %d") : nil
+     end_day = event.finish ? event.finish.strftime("%b %d") : nil
+   %>
+   
+	<h4 class="left">
+	  <%= event.name %>
+	</h4>
+	<span class='date right'><%= start_day %> - <%= end_day %></span>
+	
+	<p><%= event.description %></p>
+	
+  
+  <div class="footer">
+      Followers: <strong>number of followers here</strong>
+      <%= link_to 'Edit', edit_event_path(event) %> |
+      <%= link_to 'Delete', event, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+
+</div>

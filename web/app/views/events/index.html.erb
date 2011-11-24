@@ -1,0 +1,12 @@
+<div class="right sidebar">
+  Info about the community. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum luctus urna sit amet dapibus. Suspendisse in urna nec justo semper rutrum.
+</div>
+<div class="left main">
+<% @events.each do |event| %>
+   <%= render :partial => 'event', :locals => {:event => event} %>
+<% end %>
+<br />
+
+<%= link_to 'New Event', new_event_path %>
+</div>
+<div class="clear">

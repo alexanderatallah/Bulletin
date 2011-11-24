@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Bulletin<% if @group_name != nil %>
+  <%=": #{@group_name}" %>
+  <% end %>
+  </title>
+	<meta name="author" content="Alexander Atallah">
+	<!-- Date: 2011-09-20 -->
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			searcher = new Searcher();
+		});
+	</script>
+	
 </head>
 <body>
+	
+	<div id="wrapper">
+			<div id="header">
+			  <div style="text-align: center;">
+			  	<%= image_tag("logo.png", :alt => "logo", :class => "logo-img", :id => "logo-img", :width => "188", :height => "92" ) %> 
+
+			  </div>
+
+				<div id="search-wrapper">
+					<input type="search" id="search-input" placeholder="Search Everything" autosave='plaza-search' results = 5 incremental="incremental" />
+					<div id="results">
+					</div>
+				</div>
+
+				<div id="nav">
+					<div class="top">
+						<a>Alex Atallah&nbsp;&nbsp;|&nbsp;&nbsp;Sign out</a>
+					</div>
+					<div class="bottom">
+					  <div class="item">
+					  	<p class="large-caps blue">Plan</p>
+					  </div>
+						<div class="item current">
+							<p class="large-caps green">Browse</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content">
 
 <%= yield %>
 
+			</div>
+	  </div>
 </body>
 </html>
